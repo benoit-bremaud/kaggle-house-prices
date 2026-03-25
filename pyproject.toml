@@ -36,3 +36,8 @@ ignore = [
 
 [tool.ruff.lint.isort]
 known-first-party = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Allow empty test suite during early project phases
+addopts = "--tb=short -q"
