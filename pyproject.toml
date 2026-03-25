@@ -24,5 +24,12 @@ ignore = [
     "E501", # line too long (handled by formatter)
 ]
 
+[tool.ruff.lint.per-file-ignores]
+"notebooks/*.ipynb" = [
+    "E402", # module-level import not at top of file
+    "F811", # redefinition of unused name
+    "E501", # line too long
+]
+
 [tool.ruff.lint.isort]
 known-first-party = ["src"]
