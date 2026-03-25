@@ -27,6 +27,7 @@ Kaggle competition project — data science / machine learning.
 - **Branch naming:** `feat/{experiment-name}` (e.g., `feat/random-forest-baseline`)
 - **Commit format:** Conventional Commits — `<type>(<scope>): <description>`
 - **Branch protection:** PRs required to merge into `main`, no force push
+- **CI checks required:** `Lint & Format` (ruff) and `Tests` (pytest) must pass before merge
 - **Notebook outputs:** Automatically stripped by nbstripout on commit
 
 ## Project Structure

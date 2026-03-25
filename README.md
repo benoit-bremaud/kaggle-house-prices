@@ -1,8 +1,8 @@
-# Kaggle Project: COMPETITION_NAME
+# Kaggle Project: House Prices
 
-> **Competition:** [COMPETITION_NAME](https://www.kaggle.com/competitions/COMPETITION_NAME)
-> **Goal:** Describe the objective here.
-> **Metric:** Evaluation metric (e.g., accuracy, RMSE, AUC).
+> **Competition:** [House Prices — Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
+> **Goal:** Predict the sales price for each house based on 79 explanatory variables.
+> **Metric:** RMSE (Root Mean Squared Error on log-transformed prices).
 
 ## Pipeline
 
@@ -21,12 +21,15 @@ graph LR
 
 ```bash
 # 1. Clone this repo
-gh repo clone benoit-bremaud/kaggle-COMPETITION_NAME
+gh repo clone benoit-bremaud/kaggle-house-prices
 
 # 2. Setup environment
 make setup
 
-# 3. Start working
+# 3. Download competition data
+make data COMPETITION=house-prices-advanced-regression-techniques
+
+# 4. Start working
 make notebook
 ```
 
@@ -61,8 +64,8 @@ make notebook
 | `make lint` | Check code quality with ruff |
 | `make format` | Auto-format code with ruff |
 | `make clean` | Remove temporary files |
-| `make data COMPETITION=name` | Download competition data via Kaggle API |
-| `make submit COMPETITION=name FILE=path` | Submit predictions via Kaggle API |
+| `make data COMPETITION=house-prices-advanced-regression-techniques` | Download competition data via Kaggle API |
+| `make submit COMPETITION=house-prices-advanced-regression-techniques FILE=outputs/submissions/submission.csv` | Submit predictions via Kaggle API |
 
 ## Decisions
 
