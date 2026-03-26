@@ -63,6 +63,6 @@ When creating issues, use the DS-oriented label system:
 - **Area:** `area:notebook`, `area:src`, `area:data`, `area:model`, `area:infra`
 - **Priority:** `priority:critical`, `priority:high`, `priority:medium`, `priority:low`
 - **Status:** `status:blocked`, `status:needs-review`, `status:wontfix`
-- **Meta:** `claude-code-assisted`, `good-first-issue`
+- **Meta:** `good-first-issue`
 
 Assign multiple relevant labels per issue for effective filtering.
